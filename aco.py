@@ -122,7 +122,7 @@ class SolveTSPUsingACO:
                         self.edges[i][j].pheromone = min_pheromone
 
     def run(self):
-        print('Started : {0}'.format(self.mode))
+        print('System : {0}'.format(self.mode))
         if self.mode == 'ACS':
             self._acs()
         elif self.mode == 'Elitist':
