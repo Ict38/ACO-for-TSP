@@ -6,7 +6,7 @@ Cài đặt thư viện Pyplot bằng cách sử dụng lệnh `pip install matp
 ### Cài đặt input (main.py)
 Trong code có 2 cách để tạo dữ liệu đầu vào cho thuật toán: <br>
 Cách 1: Sử dụng hàm random tạo để sinh ra tọa độ các thành phố dưới dạng tuple(x,y) với x,y là tung và hoành độ trên đồ thị <br>
-```_nodes = [(random.uniform(-400, 400), random.uniform(-400, 400)) for _ in range(0, 15)]``` <br> (Đây là code áp dụng cho trường hợp 16 node)
+```_nodes = [(random.uniform(-400, 400), random.uniform(-400, 400)) for _ in range(0, 15)]``` <br> (Đây là code áp dụng cho trường hợp 15 node)
 
 Cách 2: Sử dụng dữ liệu được ghi sẵn từ trong file .txt ở ngoài : <br>
 Dữ liệu từ file txt: <br>
