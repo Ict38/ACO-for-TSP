@@ -1,5 +1,4 @@
 import math
-import pickle
 import random
 
 from plot import plot
