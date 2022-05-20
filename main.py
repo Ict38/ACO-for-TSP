@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 
 if __name__ == '__main__':
     #tạo random input
-    _nodes = [(random.uniform(-400, 400), random.uniform(-400, 400)) for _ in range(0, 15)]
+    _nodes = [(random.uniform(-400, 400), random.uniform(-400, 400)) for _ in range(0, 30)]
     
     #Lấy input từ file có sẵn
     
