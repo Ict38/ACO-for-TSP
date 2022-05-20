@@ -24,7 +24,8 @@ Code để lấy dữ liệu từ trong file txt:
  ```
  
  ### Thay đổi tham số thuật toán (aco.py)
-  ```def __init__(self, mode='ACS', colony_size=20, elitist_weight=1.0, min_scaling_factor=0.001, alpha=1.0, beta=3.0,
+  ```
+  def __init__(self, mode='ACS', colony_size=20, elitist_weight=1.0, min_scaling_factor=0.001, alpha=1.0, beta=3.0,
                  rho=0.1, pheromone_deposit_weight=1.0, initial_pheromone=1.0, steps=30, nodes=None):
    ```
    Ngoài thay đổi số thành phố trong bài toán TSP ở trong code có thể điều chỉnh các tham số tham gia vào thuật toán và các biến thể trong file aco.py chi tiết các tham số em đã giải thích trong phần báo cáo
