@@ -44,8 +44,8 @@ class SolveTSPUsingACO:
                 self.distance += self.edges[self.tour[i]][self.tour[(i + 1) % self.num_nodes]].weight
             return self.distance
 
-    def __init__(self, mode='ACS', colony_size=5, elitist_weight=1.0, min_scaling_factor=0.001, alpha=1.0, beta=3.0,
-                 rho=0.1, pheromone_deposit_weight=1.0, initial_pheromone=1.0, steps=50, nodes=None):
+    def __init__(self, mode='ACS', colony_size=20, elitist_weight=1.0, min_scaling_factor=0.001, alpha=1.0, beta=3.0,
+                 rho=0.1, pheromone_deposit_weight=1.0, initial_pheromone=1.0, steps=30, nodes=None):
         self.mode = mode
         self.colony_size = colony_size
         self.elitist_weight = elitist_weight
