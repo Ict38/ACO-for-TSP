@@ -1,4 +1,5 @@
 import math
+import pickle
 import random
 
 from plot import plot
@@ -7,7 +8,22 @@ from matplotlib import pyplot as plt
 
 if __name__ == '__main__':
     _nodes = [(random.uniform(-400, 400), random.uniform(-400, 400)) for _ in range(0, 15)]
+    
+    with open("E:/Ant_Colony/input.txt", "w") as output:
+        for element in _nodes:
+            output.writelines(str(element[0]) +" " +  str(element[1]) + "\n")
+    # _nodes = []
+    # with open('E:/Ant_Colony/input.txt') as f:
+    #     for line in f.readlines():
+    #         print(line)
+    #         city = line.split(' ')
+    #         city[1].replace("\n","")
+    #         print(city)
+    #         a = (float(city[0]) , float(city[1]))
+    #         _nodes.append(a)
+
     print("List of City:")
+
     for i in range(len(_nodes)):
         print('{} {}'.format(i,_nodes[i]))
     acs = SolveTSPUsingACO(mode='ACS', nodes=_nodes)
